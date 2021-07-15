@@ -224,10 +224,16 @@ Use the carMaker function below to do the following:
 */
 
 
-function carMaker(/* code here */) {
-    /* code here */
-    
+function carMaker(distance, num1) {
+    let carObj = {
+      odometer: num1,
+      drive: function(distanct){
+        return this.odometer + distance;
+      }
+    }
+    return carObj.drive(distance);
 }
+console.log('stretch3', carMaker(100, 10));
 
 
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
