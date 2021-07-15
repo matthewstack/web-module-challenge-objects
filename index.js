@@ -31,6 +31,9 @@ Test your createMenuItems function by doing the following:
 */
 
 
+console.log(createMenuItem('pizza', 10, 'Lunch'))
+console.log(createMenuItem('eggs', 5, 'Breakfast'))
+console.log(createMenuItem('cereal', 6, 'Breakfast'))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 You're having a lunch special! 25% off for teachers and students, 10% off for everyone else. Add a method to the 
@@ -49,7 +52,6 @@ const burger = {
   price: 18, 
   category: "Lunch", 
   discount: function(string){
-    // let result;
     if (string === 'student') {
       return this.price * 0.75;
     }
@@ -59,7 +61,6 @@ const burger = {
     else if (string === 'public') {
       return this.price * 0.9;    
     }
-    // return result;
   }
 }
 
